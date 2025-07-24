@@ -34,13 +34,13 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    href="/users"
                   >
                     {" "}
-                    Careers{" "}
-                  </a>
+                    Users{" "}
+                  </Link>
                 </li>
 
                 <li>
@@ -74,13 +74,12 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    href="/tests"
                   >
-                    {" "}
-                    Blog{" "}
-                  </a>
+                    {" Tests"}
+                  </Link>
                 </li>
               </ul>
             </nav>
