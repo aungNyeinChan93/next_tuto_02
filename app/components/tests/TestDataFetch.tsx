@@ -7,9 +7,16 @@ interface Todo {
   userId: number;
 }
 
-const TestDataFetch = async () => {
-  const data = await fetch(`https://dummyjson.com/todos`);
+export const getTodos = async () => {
+  const data = await fetch(`https://dummyjson.com/todos`, {
+    next: { revalidate: 3600 },
+  });
   const { todos } = await data.json();
+  return todos;
+};
+
+const TestDataFetch = async () => {
+  const todos = await getTodos();
   return (
     <React.Fragment>
       <section className="w-full mx-auto my-2">

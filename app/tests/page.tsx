@@ -1,11 +1,13 @@
 import React from "react";
-import TestDataFetch from "../components/tests/TestDataFetch";
+import TestClientDataFetch from "../components/tests/TestClientDataFetch";
+// import TestDataFetch from "../components/tests/TestDataFetch";
 
-const Tests = () => {
+const Tests = async () => {
   return (
     <React.Fragment>
       <section>
-        <TestDataFetch />
+        {/* <TestDataFetch /> */}
+        <TestClientDataFetch />
       </section>
     </React.Fragment>
   );
